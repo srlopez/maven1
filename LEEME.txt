@@ -26,10 +26,12 @@
 . Desde GitHub creamos el pull request
 . Y lo aceptamos (en modo Squash, agrupando los commits)
 
-== Automatizamos Pull Request si pasa los test
+== Probamos Automatizamcion con Actions
 . GitHub Settings Allow all actions
 . Creamos .github/workflow/ (de la plantilla que nos proponen Java with Maven )
 . Commit en Github Y
 . Sincronizamos para bajarlo
 
 . Lo modificamos para testeo
+
+==

@@ -27,3 +27,10 @@ jobs:
 #        cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+  CI/CD:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Maven Test
+      run: mvn clean test
