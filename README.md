@@ -1,2 +1,11 @@
 #test
-Prueba de protección de la rama, tras "Require a pull request before merging", e "Include administrators"
+Proteción de rama 'master' con
+  .. Require a pull request before merging
+  .. Include administrators
+  
+Actuacion sobre rama 'feature1'
+  .. commit
+  
+Luego crearemos una pull request
+  . Para ve cómo se lanzan las actions
+
