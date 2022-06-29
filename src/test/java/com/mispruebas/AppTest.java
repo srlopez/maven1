@@ -51,6 +51,6 @@ public class AppTest
         double suma = app.Suma(5.6,5.8);
         double expected = 11.4; //11.39999999
         // assert
-        assertEquals(expected, suma , 0);
+        assertEquals(expected, suma , 0.01);
     }
 }
