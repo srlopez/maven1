@@ -16,4 +16,8 @@ public class App {
     public int Suma(int a, int b, int c) {
         return a + Suma(a, b);
     }
+
+    public double Suma(double a, double b) {
+        return a + b;
+    }
 }

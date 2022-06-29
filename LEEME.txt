@@ -1,9 +1,11 @@
+== Preparación
 . Creo un proyecto maven desde la Paleta de Comandos
 . Inicializo el repo Git: git init
 . Creo en .gitignore (copiado)
 . Creo un README.md
 . Los subo un GitHub (desde el pluging)
 
+== Verificamos que el proyecto funciona y testeamos
 . Probamos el proyecto
   .. en pom.xml
     <properties>
@@ -12,4 +14,12 @@
     </properties>
     $ mvn clean compile exec:java
     $ mvn exec:java
+. Creamos algún test
+. Sincronizado 
+
+== Preparamos un rama para luego sincronizarla con pull request
+. nueva rama 'feature1' desde la paleta de comandos
+. Modificamos la App añadiendo algo
+
+
 
