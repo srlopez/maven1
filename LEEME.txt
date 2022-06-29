@@ -49,3 +49,7 @@
 . en GitHUb creamos un Pullrequest, 
   .. Avisa que no se automatiza el MERGE, pero lo greamos.
   .. Se lanza las Actions
+
+. Hacemos pruebas en local 'feauture1'
+  .. en LEEME
+  .. y test fallidos
