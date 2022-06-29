@@ -3,3 +3,13 @@
 . Creo en .gitignore (copiado)
 . Creo un README.md
 . Los subo un GitHub (desde el pluging)
+
+. Probamos el proyecto
+  .. en pom.xml
+    <properties>
+        ...
+        <exec.mainClass>com.mispruebas.App</exec.mainClass>
+    </properties>
+    $ mvn clean compile exec:java
+    $ mvn exec:java
+
