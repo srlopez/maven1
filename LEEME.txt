@@ -19,7 +19,17 @@
 
 == Preparamos un rama para luego sincronizarla con pull request
 . nueva rama 'feature1' desde la paleta de comandos
-. Modificamos la App añadiendo algo
+. Modificamos la App añadiendo algo, y test
+. Sincronizamos
 
+== Pull request
+. Desde GitHub creamos el pull request
+. Y lo aceptamos (en modo Squash, agrupando los commits)
 
+== Automatizamos Pull Request si pasa los test
+. GitHub Settings Allow all actions
+. Creamos .github/workflow/ (de la plantilla que nos proponen Java with Maven )
+. Commit en Github Y
+. Sincronizamos para bajarlo
 
+. Lo modificamos para testeo
