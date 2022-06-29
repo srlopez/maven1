@@ -34,5 +34,18 @@
 
 . Lo modificamos para testeo
 
-== Nuevo workflow
-. para pull_request
+== Nuevo workflow <- CON PROTECCION de PUSH/MERGE
+. Repositorio público
+. Proteción de rama 'master' con
+  .. Require a pull request before merging
+  .. Include administrators
+
+. Creamos un workflow que realice los test
+  .. y lo asociamos con on: pull_request
+
+. Actualizamos la rama 'feature1'
+  .. Sincronizamos
+
+. en GitHUb creamos un Pullrequest, 
+  .. Avisa que no se automatiza el MERGE, pero lo greamos.
+  .. Se lanza las Actions
