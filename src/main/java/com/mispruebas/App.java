@@ -22,7 +22,7 @@ public class App {
     }
 
     public int Multiplica(int a, int b) {
-        // Prueba
+        // Prueba 2
         return a * b;
     }
 
