@@ -1,0 +1,4 @@
+. Creo un proyecto maven desde la Paleta de Comandos
+. Inicializo el repo Git: git init
+. Creo en .gitignore (copiado)
+. Los subo un GitHub (desde el pluging)
