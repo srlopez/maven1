@@ -20,4 +20,9 @@ public class App {
     public double Suma(double a, double b) {
         return a + b;
     }
+
+    public int Multiplica(int a, int b) {
+        return a * b;
+    }
+
 }

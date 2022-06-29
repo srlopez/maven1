@@ -53,4 +53,16 @@ public class AppTest
         // assert
         assertEquals(expected, suma , 0.01);
     }
+    
+    @Test
+    public void testMultiplica()
+    {
+        // arrange
+        App app = new App();
+        // act
+        int suma = app.Multiplica(3,4);
+        int expected = 12;
+        // assert
+        assertEquals(expected, suma );
+    }
 }
