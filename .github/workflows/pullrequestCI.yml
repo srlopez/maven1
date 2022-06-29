@@ -1,21 +1,13 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: Java CI with Maven pull_request
 
 on:
-  push:
-    branches: [ "master" ]
-#  pull_request:
-#    branches: [ "master" ]
+  pull_request:
 
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "🎉 The job was automatically triggered by a 'on: ${{ github.event_name }}' event."
-
-  build:
+  Unit_Tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -26,11 +18,6 @@ jobs:
 #        distribution: 'temurin'
 #        cache: maven
     - name: Build with Maven
-      run: mvn -B package -DskipTests --file pom.xml   
-
-  CI_CD:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Maven Test
-      run: mvn clean test     
+      run: mvn -B package -DskipTests    
+    - name: VERIFY - run any checks on results of integration tests to ensure quality criteria are met
+      run: mvn verify     
