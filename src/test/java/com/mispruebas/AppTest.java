@@ -29,4 +29,16 @@ public class AppTest
         // assert
         assertEquals(expected, suma );
     }
+
+    @Test
+    public void testSumaDouble()
+    {
+        // arrange
+        App app = new App();
+        // act
+        double suma = app.Suma(3.5,4.5);
+        double expected = 8.0;
+        // assert
+        assertEquals(expected, suma , 0);
+    }
 }
